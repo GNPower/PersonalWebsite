@@ -9,3 +9,63 @@ html, body {
 canvas { 
     display:block;
 }
+
+.flex-col {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
+
+.flex-row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+.project-col {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    width: 20%;
+    padding: 1%;
+}
+
+.project-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.project-tile {
+    width: 100%;
+    float: left;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    transition: 0.3s ease;
+}
+
+.project-tile:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.project-tile .logo {
+    width: 2.5rem;
+    height: auto;
+    border-radius: 15px 0 0 0;
+}
+
+.project-tile .hero {
+    width: 100%;
+    height: auto;
+}
+
+.project-tile p {
+    margin: 1%;
+}
+
+.project-tile .flex-row {
+    background-color: blue;
+    border-radius: 15px 15px 0 0;
+}
