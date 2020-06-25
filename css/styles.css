@@ -1,9 +1,12 @@
 * { 
-    margin:0; padding:0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 } 
 
 html, body { 
-    width:100%; height:100%;
+    width: 100%;
+    height: 100%;
 } 
 
 canvas { 
@@ -20,6 +23,52 @@ canvas {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(138, 120, 138);
+}
+
+.logo {
+    color: rgb(177, 177, 177);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;    
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: rgb(177, 177, 177);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.mobile{
+    display: none;
+    cursor: pointer;
+}
+
+.mobile div{
+    width: 25px;
+    height: 3px;
+    background-color: rgb(177, 177, 177);
+    margin: 5px;
 }
 
 .project-col {
@@ -127,14 +176,20 @@ canvas {
     filter: brightness(1) grayscale(0);
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1024px) {
     .gallery {
         display: grid;
         grid-template-columns: auto auto auto;
     }
+    .nav-links {
+        width: 45%;
+    }
 }
 
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
     .gallery {
         display: block;
     }
@@ -147,5 +202,39 @@ canvas {
     .gallery .img img {
         display: block;
         filter: brightness(1) grayscale(0);
+    }
+    .nav-links {
+        position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        background-color: rgb(138, 120, 138);
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .mobile {
+        display: block;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
     }
 }
