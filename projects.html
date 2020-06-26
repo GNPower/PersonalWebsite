@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
         <link rel="stylesheet" href="css/styles.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
         <script src="scripts/navmenu.js"></script>
     </head>
     <body>
@@ -13,17 +14,17 @@
                 <h4>LOGO</h4>
             </div>
             <ul class="nav-links">
-                <li class="active-page">
-                    <a href="#">Home</a>
+                <li id="nav-home" class="nav-item">
+                    <a href="index.html?from=projects">Home</a>
                 </li>
-                <li class="nav-item" onclick="moveNavSlider();">
-                    <a href="projects.html">Projects</a>
+                <li id="nav-projects" class="nav-item active-page">
+                    <a href="#">Projects</a>
                 </li>
-                <li class="nav-item" onclick="moveNavSlider();">
-                    <a href="contact.html">Contact</a>
+                <li id="nav-contact" class="nav-item">
+                    <a href="contact.html?from=projects">Contact</a>
                 </li>
-                <li class="nav-item" onclick="moveNavSlider();">
-                    <a href="resume.html">Resume</a>
+                <li id="nav-resume" class="nav-item">
+                    <a href="resume.html?from=projects">Resume</a>
                 </li>
             </ul>
     

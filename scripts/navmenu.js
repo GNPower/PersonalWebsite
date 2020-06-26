@@ -1,21 +1,11 @@
-$(function () {
-    
-    $('#nav-menu').load('navmenu.html');    
+var nav_order = {
+    'nav-home': 1,
+    'nav-projects': 2,
+    'nav-contact': 3,
+    'nav-resume': 4
+};
 
-    var page = document.location.pathname.match(/[^\/]+$/)[0];
-    console.log(page);
-
-    $('#nav-home').addClass('active-page');
-
-    if (page == 'index.html' || page == 'home.html'){
-
-    } else if (page == 'projects.html') {
-        
-    } else if (page == 'contact.html') {
-
-    } else if (page == 'resume.html') {
-
-    }
+$(function () {   
 
     $('.mobile').click(function () {
         //Toggle nav
@@ -31,12 +21,37 @@ $(function () {
         });
         //Animate Nav
         $('.mobile').toggleClass('toggle-mobile-nav');
-    });  
-
-    $('.nav-slider').css({
-        'width': ($('.active-page').width() + 'px'),
-        'left': ($('.active-page').first().position().left / $('nav').width() * 100 + '%')
     });
+
+    var from = 'nav-' + decodeURIComponent(window.location.search).substring(1).split('=')[1];
+    var to = $('.active-page')[0].id;
+    //Set Nav Slider
+    $('.nav-slider').css({
+        'width': ($('#' + from).width() + 'px'),
+        'left': ($('#' + from).position().left / $('nav').width() * 100 + '%')
+    });
+
+    
+    //Animate Nav Slider    
+    if (nav_order[from] < nav_order[to]){
+        $('.nav-slider').animate({
+            'width': ($('#' + to).position().left + $('#' + to).width() - $('#' + from).position().left + 'px')
+        }, 200, 'swing', function() {
+            $('.nav-slider').animate({
+                'left': ($('#' + to).position().left + 'px'),
+                'width': ($('#' + to).width() + 'px')
+            }, 200, 'swing');
+        });
+    } else {
+        $('.nav-slider').animate({
+            'left': ($('#' + to).position().left + 'px'),
+            'width': ($('#' + from).position().left + $('.nav-slider').width() - $('#' + to).position().left + 'px')
+        }, 200, 'swing', function(){
+            $('.nav-slider').animate({
+                'width': ($('#' + to).width() + 'px')
+            }, 200, 'swing');
+        });
+    }
 });
 
 $(window).resize(function () {
@@ -45,7 +60,3 @@ $(window).resize(function () {
         'left': ($('.active-page').first().position().left / $('nav').width() * 100 + '%')
     });
 });
-
-function moveNavSlider(){
-    console.log('moving...');
-}
