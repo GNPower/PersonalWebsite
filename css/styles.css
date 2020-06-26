@@ -52,7 +52,7 @@ nav {
 
 .nav-links li {
     list-style: none;
-    
+    cursor: pointer;
 }
 
 .nav-links a {

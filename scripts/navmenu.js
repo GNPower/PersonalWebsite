@@ -1,23 +1,22 @@
 $(function () {
+    
+    $('#nav-menu').load('navmenu.html');    
 
-    function changeContent($uri){
-        var $parent = $('main');
-        $.ajax({
-            url:$uri,
-            type:'get',
-            success:function($content){
-                $parent.html($content);
-            },
-            error:function(err){
-                //Handle errors like 404, etc from here
-            }
-        });
+    var page = document.location.pathname.match(/[^\/]+$/)[0];
+    console.log(page);
+
+    $('#nav-home').addClass('active-page');
+
+    if (page == 'index.html' || page == 'home.html'){
+
+    } else if (page == 'projects.html') {
+        
+    } else if (page == 'contact.html') {
+
+    } else if (page == 'resume.html') {
+
     }
 
-    $('.nav-item').click(function(){
-         changeContent($(this).attr('uri'))
-    });
-    
     $('.mobile').click(function () {
         //Toggle nav
         $('.nav-links').toggleClass('nav-active');
