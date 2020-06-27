@@ -34,7 +34,7 @@ $(function () {
     
     //Animate Nav Slider    
     if (nav_order[from] < nav_order[to]){
-        $('.nav-slider').animate({
+        $('.nav-slider').stop(true, true).delay(500).animate({
             'width': ($('#' + to).position().left + $('#' + to).width() - $('#' + from).position().left + 'px')
         }, 200, 'swing', function() {
             $('.nav-slider').animate({
@@ -43,7 +43,7 @@ $(function () {
             }, 200, 'swing');
         });
     } else {
-        $('.nav-slider').animate({
+        $('.nav-slider').stop(true, true).delay(500).animate({
             'left': ($('#' + to).position().left + 'px'),
             'width': ($('#' + from).position().left + $('.nav-slider').width() - $('#' + to).position().left + 'px')
         }, 200, 'swing', function(){

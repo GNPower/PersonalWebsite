@@ -120,7 +120,8 @@ function findOpenDir(x, y){
 }
 
 function setup(){
-  createCanvas();
+  let cnv = createCanvas();
+  cnv.id('circuit-background');
   ellipseMode(CENTER);
   
   resize();
