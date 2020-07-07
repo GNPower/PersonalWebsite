@@ -106,6 +106,7 @@ nav {
     overflow: hidden;
     background: url(hero.jpg) no-repeat center;
     background-size: cover;
+    margin-bottom: 5%;
 }
 
 .hero-content {
@@ -179,6 +180,38 @@ nav {
 .project-tile .flex-row {
     background-color: blue;
     border-radius: 15px 15px 0 0;
+}
+
+.skill-col {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    width: 20%;
+    padding: 3%;
+}
+
+.skill-row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    padding: 0 10%;
+}
+
+.skill-tile {
+    width: 100%;
+    float: left;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+}
+
+.skill-tile .hero {
+    width: 100%;
+    height: auto;
+}
+
+.skill-tile p {
+    margin: 1%;
 }
 
 .gallery {
