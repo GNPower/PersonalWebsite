@@ -24,6 +24,9 @@ $(function () {
     });
 
     var from = 'nav-' + decodeURIComponent(window.location.search).substring(1).split('=')[1];
+    if (from === 'nav-undefined'){
+        from = 'nav-home';
+    }
     var to = $('.active-page')[0].id;
     //Set Nav Slider
     $('.nav-slider').css({
