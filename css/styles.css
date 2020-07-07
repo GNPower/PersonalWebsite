@@ -21,6 +21,10 @@ canvas {
     z-index: -10;
 }
 
+.margins {
+    margin: 3% 10% 0 10%;
+}
+
 .flex-col {
     display: flex;
     flex-flow: column nowrap;
@@ -106,7 +110,7 @@ nav {
     overflow: hidden;
     background: url(hero.jpg) no-repeat center;
     background-size: cover;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }
 
 .hero-content {
@@ -133,19 +137,26 @@ nav {
     display: inline-block;
 }
 
+.section-header p {
+    text-align: left !important;
+}
+
+.projects p {
+    text-align: center;
+}
+
 .project-col {
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
-    width: 25%;
-    padding: 3%;
+    width: 33%;
+    padding: 2%;
 }
 
 .project-row {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    padding: 0 10%;
 }
 
 .project-tile {
@@ -186,7 +197,7 @@ nav {
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
-    width: 20%;
+    width: 22%;
     padding: 3%;
 }
 
@@ -194,7 +205,7 @@ nav {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
-    padding: 0 10%;
+    padding-left: 10%;
 }
 
 .skill-tile {
@@ -208,6 +219,20 @@ nav {
 .skill-tile .hero {
     width: 100%;
     height: auto;
+}
+
+.progress-bar .bar {
+    width: 100%;
+    height: 10px;
+    background-color: grey;
+    border-radius: 8px;
+}
+
+.progress-bar .bar .filler {
+    width: 1%;
+    height: 100%;
+    background-color: green;
+    border-radius: 8px;
 }
 
 .skill-tile p {
