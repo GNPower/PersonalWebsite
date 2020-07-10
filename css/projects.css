@@ -1,3 +1,39 @@
+.project {
+    margin-top: 10%;
+}
+
+.project .min {
+    display: none;
+}
+
+.hero-img {
+    position: relative;
+    top: 8vh;
+    height: 500px;
+    overflow: hidden;
+    background: url(../img/hero.jpg) no-repeat center;
+    background-size: cover;
+    margin-bottom: 2%;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.hero-content h1 {
+    font-size: 72px;
+    letter-spacing: 0.2em;
+    margin: 0;
+}
+
 .gallery {
     position: relative;
     height: auto;
