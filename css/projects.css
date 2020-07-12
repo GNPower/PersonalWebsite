@@ -1,9 +1,13 @@
-.project {
-    margin-top: 10%;
+.projects-container {
+    margin-top: 0%;
 }
 
-.project .min {
-    display: none;
+.project .max {
+    margin-top: 2%;
+}
+
+.project .max p {
+    margin: 0 5%;
 }
 
 .hero-img {
@@ -39,7 +43,7 @@
     height: auto;
     width: 90%;
     margin: auto;
-    padding: 45px 0;
+    padding: 0;
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-gap: 2vh;
@@ -89,6 +93,25 @@
 
 .gallery .img:hover img {
     filter: brightness(1) grayscale(0);
+}
+
+.links {
+    display: inline-block;
+    text-align: left;
+    margin: 1% 5%;
+}
+
+.links .link {
+    display: inline-block;
+    width: 10em;
+    height: 10em;
+    text-align: center;
+}
+
+.links .link img {
+    margin-top: 1em;
+    width: inherit;
+    height: inherit;
 }
 
 @media only screen and (max-width: 1024px) {
