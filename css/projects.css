@@ -3,14 +3,18 @@
 }
 
 .project .max {
+    overflow: hidden;
     margin-top: 2%;
+    transition: max-height 1s ease-out;
+    max-height: 0;    
 }
 
 .project .max p {
     margin: 0 5%;
 }
 
-.hero-img {
+.project .min {
+    margin-top: 0%;
     position: relative;
     top: 8vh;
     height: 500px;
