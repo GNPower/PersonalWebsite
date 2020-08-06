@@ -1,7 +1,21 @@
 .download {
     display: block;
     position: fixed;
+    right: 6%;
+}
+
+.print {
+    display: block;
+    position: fixed;
     right: 2%;
+}
+
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
 }
 
 .resume {
