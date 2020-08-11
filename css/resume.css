@@ -23,9 +23,11 @@ button {
     width: 80%;
     margin: auto;
     margin-top: 4%;
+    overflow-y: auto;
 }
 
 .resume img {
+    display: block;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
