@@ -21,7 +21,7 @@
     overflow: hidden;
     background: url(../img/hero.jpg) no-repeat center;
     background-size: cover;
-    margin-bottom: 2%;
+    margin-bottom: 4.5rem;
 }
 
 .hero-content {
