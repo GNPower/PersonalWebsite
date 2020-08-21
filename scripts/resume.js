@@ -26,7 +26,7 @@ $(function() {
                 }	
         }
 
-        // for IE < 11
+        // for IE < 11 
         else if ( !! window.ActiveXObject && document.execCommand)     {
             var _window = window.open(fileURL, '_blank');
             _window.document.close();
