@@ -1,0 +1,66 @@
+{
+    "about_me": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "projects": {
+        "intro": "Some of my best works",
+        "projects": [
+            {
+                "title": "Project One",
+                "icon": "img/placeholder.png",
+                "hero_img": "img/placeholder.png",
+                "paragraph": "This is some text to describe the project and its contents. This is some text to describe the project and its contents. This is some text to describe the project and its contents. This is some text to describe the project and its contents."
+            },
+            {
+                "title": "Project Two",
+                "icon": "img/placeholder.png",
+                "hero_img": "img/placeholder.png",
+                "paragraph": "This is some text to describe the project and its contents. This is some text to describe the project and its contents. This is some text to describe the project and its contents. This is some text to describe the project and its contents."
+            },
+            {
+                "title": "Project Three",
+                "icon": "img/placeholder.png",
+                "hero_img": "img/placeholder.png",
+                "paragraph": "This is some text to describe the project and its contents. This is some text to describe the project and its contents. This is some text to describe the project and its contents. This is some text to describe the project and its contents."
+            }
+        ]
+    },
+    "skills": {
+        "intro": "A list of my technical skills",
+        "skills": [
+            {
+                "title": "Skill One",
+                "icon": "img/placeholder.png",
+                "ability_name": "Comfortable",
+                "ability_num": 80,
+                "paragraph": "This is some text to describe the project and its contents. This is some text to describe the project and its contents. This is some text to describe the project and its contents. This is some text to describe the project and its contents."
+            },
+            {
+                "title": "Skill Two",
+                "icon": "img/placeholder.png",
+                "ability_name": "Comfortable",
+                "ability_num": 80,
+                "paragraph": "This is some text to describe the project and its contents. This is some text to describe the project and its contents. This is some text to describe the project and its contents. This is some text to describe the project and its contents."
+            },
+            {
+                "title": "Skill Three",
+                "icon": "img/placeholder.png",
+                "ability_name": "Comfortable",
+                "ability_num": 80,
+                "paragraph": "This is some text to describe the project and its contents. This is some text to describe the project and its contents. This is some text to describe the project and its contents. This is some text to describe the project and its contents."
+            },
+            {
+                "title": "Skill Four",
+                "icon": "img/placeholder.png",
+                "ability_name": "Comfortable",
+                "ability_num": 80,
+                "paragraph": "This is some text to describe the project and its contents. This is some text to describe the project and its contents. This is some text to describe the project and its contents. This is some text to describe the project and its contents."
+            },
+            {
+                "title": "Skill Five",
+                "icon": "img/placeholder.png",
+                "ability_name": "Comfortable",
+                "ability_num": 80,
+                "paragraph": "This is some text to describe the project and its contents. This is some text to describe the project and its contents. This is some text to describe the project and its contents. This is some text to describe the project and its contents."
+            }
+        ]
+    }
+}

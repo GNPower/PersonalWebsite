@@ -105,7 +105,7 @@
 
 .skill-row {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: flex-start;
     padding-left: 10%;
 }
