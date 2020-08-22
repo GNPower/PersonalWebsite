@@ -1,0 +1,70 @@
+[
+    {
+        "title": "Project One",
+        "hero_img": "img/hero.jpg",
+        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper scelerisque pretium. Pellentesque ornare enim eu ante iaculis, in facilisis erat eleifend. Suspendisse euismod purus dolor, ut congue nibh consectetur consequat. Nunc nulla neque, egestas quis accumsan et, efficitur sed odio. Mauris euismod hendrerit gravida. Ut facilisis scelerisque enim, eget vestibulum diam rhoncus at. Quisque pharetra, nulla a mattis tristique, eros magna dapibus ex, nec dignissim nibh lacus non nisi. Praesent ut mollis nisl. Cras congue, sem ac vulputate tincidunt, sapien mi aliquet purus, non tincidunt lorem lorem eget urna. Sed ac orci non nunc pharetra vestibulum. Mauris vel est aliquam, ultricies diam vitae, lobortis dui. Proin egestas libero sit amet nisl rhoncus vestibulum. Proin vel justo massa.",
+        "gallery": [
+            "img/1.jpeg",
+            "img/2.jpeg",
+            "img/3.jpeg",
+            "img/4.jpeg",
+            "img/5.jpeg"
+        ],
+        "links": [
+            {
+                "title": "Google",
+                "icon": "img/placeholder.png",
+                "link": "https://www.google.com"
+            },
+            {
+                "title": "LinkedIn",
+                "icon": "img/placeholder.png",
+                "link": "https://www.linkedin.com/in/gnpower"
+            },
+            {
+                "title": "GitHub",
+                "icon": "img/placeholder.png",
+                "link": "https://www.github.com/GNPower"
+            },
+            {
+                "title": "Yahoo",
+                "icon": "img/placeholder.png",
+                "link": "https://www.yahoo.com"
+            }
+        ]
+    },
+    {
+        "title": "Project Two",
+        "hero_img": "img/hero.jpg",
+        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper scelerisque pretium. Pellentesque ornare enim eu ante iaculis, in facilisis erat eleifend. Suspendisse euismod purus dolor, ut congue nibh consectetur consequat. Nunc nulla neque, egestas quis accumsan et, efficitur sed odio. Mauris euismod hendrerit gravida. Ut facilisis scelerisque enim, eget vestibulum diam rhoncus at. Quisque pharetra, nulla a mattis tristique, eros magna dapibus ex, nec dignissim nibh lacus non nisi. Praesent ut mollis nisl. Cras congue, sem ac vulputate tincidunt, sapien mi aliquet purus, non tincidunt lorem lorem eget urna. Sed ac orci non nunc pharetra vestibulum. Mauris vel est aliquam, ultricies diam vitae, lobortis dui. Proin egestas libero sit amet nisl rhoncus vestibulum. Proin vel justo massa.",
+        "gallery": [
+            "img/1.jpeg",
+            "img/2.jpeg",
+            "img/3.jpeg",
+            "img/4.jpeg",
+            "img/5.jpeg"
+        ],
+        "links": [
+            {
+                "title": "Google",
+                "icon": "img/placeholder.png",
+                "link": "https://www.google.com"
+            },
+            {
+                "title": "LinkedIn",
+                "icon": "img/placeholder.png",
+                "link": "https://www.linkedin.com/in/gnpower"
+            },
+            {
+                "title": "GitHub",
+                "icon": "img/placeholder.png",
+                "link": "https://www.github.com/GNPower"
+            },
+            {
+                "title": "Yahoo",
+                "icon": "img/placeholder.png",
+                "link": "https://www.yahoo.com"
+            }
+        ]
+    }
+]
